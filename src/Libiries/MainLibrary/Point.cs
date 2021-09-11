@@ -1,12 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static System.Console;
 
 namespace Geom.MainLibrary
 {
-    class Point
+    public struct Point
     {
+        const char symbol = '*';
+        public int X, Y;
+        public Point(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+        public void Draw()
+        {
+            SetCursorPosition(X, Y);
+            Write(symbol);
+        }
     }
 }

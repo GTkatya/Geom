@@ -1,5 +1,6 @@
 ﻿using System;
 using Geom.MainLibrary;
+using Geom.MainLibrary.Shapes.Lines;
 using static System.Console;
 
 namespace TestCMD
@@ -8,7 +9,7 @@ namespace TestCMD
     {
         static void Main(string[] args)
         {
-            Point p = new Point(2, 3);
+            Line p = new VerticalLine(3, 4, 4);
             p.Draw();
             ReadKey();
         }

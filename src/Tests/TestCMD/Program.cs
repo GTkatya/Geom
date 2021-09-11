@@ -1,4 +1,6 @@
 ﻿using System;
+using Geom.MainLibrary;
+using static System.Console;
 
 namespace TestCMD
 {
@@ -6,7 +8,9 @@ namespace TestCMD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Point p = new Point(2, 3);
+            p.Draw();
+            ReadKey();
         }
     }
 }
